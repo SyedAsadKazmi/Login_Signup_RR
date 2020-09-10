@@ -1,15 +1,14 @@
 {
-  "name": "Login_Signup_RR",
+  "name": "login_signup_backend",
   "version": "1.0.0",
-  "description": "React and RubyOnRails Login-Signup",
+  "description": "RubyOnRails Backend",
   "main": "index.js",
   "repository": "https://github.com/SyedAsadKazmi/Login_Signup_RR",
   "author": "Syed Asad Kazmi",
   "license": "MIT",
 
   "scripts": {
-    
-    "build": "npm --prefix ./login_signup_frontend install",
+    "build": "cd login_signup_frontend && yarn install && yarn build && cd ..",
     "deploy": "cp -a login_signup_frontend/build/. public/",
     "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
   },
