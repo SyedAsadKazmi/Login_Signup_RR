@@ -8,9 +8,9 @@
   "license": "MIT",
 
 "scripts": {
-  "build": "cd login_signup_frontend && yarn install && yarn build && cd ..",
+  "build": "npm install --prefix login_signup_frontend && npm run build --prefix login_signup_frontend",
   "deploy": "cp -a login_signup_frontend/build/. public/",
-  "postinstall": "yarn deploy && echo 'Client built!'"
+  "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
 },
 
 "engines": {
