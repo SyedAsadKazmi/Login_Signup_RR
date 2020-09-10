@@ -1,0 +1,21 @@
+{
+  "name": "Login_Signup_RR",
+  "version": "1.0.0",
+  "description": "React-ROR Login-Signup",
+  "main": "index.js",
+  "repository": "https://github.com/SyedAsadKazmi/Login_Signup_RR.git",
+  "author": "<syedasadkazmi786@gmail.com>",
+  "license": "MIT",
+
+"scripts": {
+  "build": "cd login_signup_frontend && yarn install && yarn build && cd ..",
+  "deploy": "cp -a login_signup_frontend/build/. public/",
+  "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
+},
+
+"engines": {
+  "yarn": "1.22.5",
+  "npm": "6.14.6",
+  "node": "v12.18.3"
+}
+}
