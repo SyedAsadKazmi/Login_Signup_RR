@@ -10,7 +10,7 @@
 "scripts": {
   "build": "cd login_signup_frontend && yarn install && yarn build && cd ..",
   "deploy": "cp -a login_signup_frontend/build/. public/",
-  "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
+  "postinstall": "yarn deploy && echo 'Client built!'"
 },
 
 "engines": {
