@@ -8,7 +8,8 @@
   "license": "MIT",
 
   "scripts": {
-    "build": "cd login_signup_frontend && yarn install && yarn build && cd ..",
+    
+    "build": "npm --prefix ./login_signup_frontend install",
     "deploy": "cp -a login_signup_frontend/build/. public/",
     "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
   },
